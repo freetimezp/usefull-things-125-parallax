@@ -9,3 +9,85 @@
 a {
     text-decoration: none;
 }
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #0f0f0f;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+h1 {
+    text-align: center;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.9);
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    padding: 15px 30px;
+    outline: none;
+    box-shadow: none;
+}
+
+.gallery {
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.link a {
+    color: #fff;
+}
+
+i {
+    position: relative;
+    top: 1.5px;
+}
